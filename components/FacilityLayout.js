@@ -13,7 +13,7 @@ export default function FacilityLayout({ children, facility = "frontier" }) {
         <Grid item xs={12} md={8} lg={9} className="w-full">
           <div>
             <Image
-              src={`/images/map/${facility}.png`}
+              src={`/battlefrontier/images/map/${facility}.png`}
               alt={facilities[facility].brain}
               width={640}
               height={360}

@@ -27,10 +27,10 @@ function ListItems({ facility }) {
               >
                 <ListItemIcon>
                   <Image
-                    src={`/images/symbol/gold/${facilities[fa].symbol}.png`}
+                    src={`/static/images/trainer/overworld/${facilities[fa].brain}.png`}
                     alt={facilities[fa].brain}
                     width="40px"
-                    height="36px"
+                    height="40px"
                   />
                 </ListItemIcon>
                 <ListItemText primary={"バトル" + facilities[fa].name} />
