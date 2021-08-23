@@ -8,7 +8,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import Divider from "@material-ui/core/Divider";
 import HomeIcon from "@material-ui/icons/Home";
-import Image from "next/image";
 
 import facilities from "../data/name";
 
@@ -26,7 +25,7 @@ function ListItems({ facility }) {
                 className={facility === fa ? "bg-black text-white" : ""}
               >
                 <ListItemIcon>
-                  <Image
+                  <img
                     src={`/images/symbol/gold/${facilities[fa].symbol}.png`}
                     alt={facilities[fa].brain}
                     width="40px"
