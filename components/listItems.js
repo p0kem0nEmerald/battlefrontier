@@ -9,7 +9,8 @@ import ListSubheader from "@material-ui/core/ListSubheader";
 import Divider from "@material-ui/core/Divider";
 import HomeIcon from "@material-ui/icons/Home";
 
-import facilities from "../data/name";
+// import Facilities from "../data/facilities";
+import Facilities from "../data/facilities.json";
 
 function ListItems({ facility }) {
   // const { asPath } = useRouter();
@@ -18,7 +19,7 @@ function ListItems({ facility }) {
     <>
       <List>
         <div>
-          {Object.keys(facilities).map((fa) => (
+          {Object.keys(Facilities).map((fa) => (
             <Link href={"/" + fa}>
               <ListItem
                 button
@@ -26,13 +27,13 @@ function ListItems({ facility }) {
               >
                 <ListItemIcon>
                   <img
-                    src={`/static/images/trainer/overworld/${facilities[fa].brain}.png`}
-                    alt={facilities[fa].brain}
+                    src={`/static/images/trainer/overworld/${Facilities[fa].brain}.png`}
+                    alt={Facilities[fa].brain}
                     width="40px"
                     height="40px"
                   />
                 </ListItemIcon>
-                <ListItemText primary={"バトル" + facilities[fa].name} />
+                <ListItemText primary={"バトル" + Facilities[fa].name} />
               </ListItem>
             </Link>
           ))}
