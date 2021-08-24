@@ -25,7 +25,7 @@ function ListItems({ facility }) {
                 className={facility === fa ? "bg-black text-white" : ""}
               >
                 <ListItemIcon>
-                  <Image
+                  <img
                     src={`/static/images/trainer/overworld/${facilities[fa].brain}.png`}
                     alt={facilities[fa].brain}
                     width="40px"
